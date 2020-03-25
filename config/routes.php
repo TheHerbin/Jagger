@@ -1,10 +1,11 @@
 <?php
 
-function getPage(){
+function getPage($db){
 
     $lesPages['accueil'] = "accueilControleur";
     $lesPages['add_record'] = "add_recordControleur";
     $lesPages['maintenance'] = "maintenanceControleur";
+    $lesPages['add_article'] = "add_articleControleur";
     if($db!=NULL){
 
         if(isset($_GET['page'])){

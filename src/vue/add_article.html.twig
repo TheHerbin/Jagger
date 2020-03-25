@@ -1,0 +1,48 @@
+{% extends "base.html.twig" %}
+{% block title %} {{parent()}} Ajouter un article {% endblock %}
+{% block contenu %}
+
+
+<div class="container">
+        <form method="post" action="index.php?page=add_article">
+          
+          
+          <div class="form-group">
+            <label for="AideTriste">Titre</label>
+            <input type="text" class="form-control" name="titre" placeholder="On m'appelle l'Ovni">
+          </div>
+
+          <div class="form-group">
+            <label for="AideContenu">Contenu</label>
+          </div>
+          <textarea name="texte" rows="8" cols="50">
+            Contenu ICI
+                </textarea>
+
+    <div class="form-group">
+            <label for="AideIdgenre">Genre :</label>
+          </div>
+
+           <div class="form-group">
+        <select class="form-control" name="idgenre">
+        <option value="1">Rock</option>
+        <option value="2">Rap</option>
+        </select>
+            </div>
+          
+          
+           <div class="form-group">
+          <button name="btAjouter" type="submit" class="btn btn-primary">Ajouter</button>
+        </form>
+      </div>
+
+
+
+
+
+
+
+
+
+
+{% endblock %}
