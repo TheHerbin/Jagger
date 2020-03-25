@@ -1,0 +1,32 @@
+{% extends "base.html.twig" %}
+{% block title %} {{parent()}} Ajouter un enregistrement {% endblock %}
+{% block contenu %}
+
+
+
+<div class="container">
+        <form method="post" action="index.php?page=add_record">
+          
+          
+          <div class="form-group">
+            <label for="AideGenre">Genre</label>
+            <input type="text" class="form-control" name="genre" placeholder="Techtonique">
+          </div>
+
+          
+          
+           <div class="form-group">
+          <button name="btAjouter" type="submit" class="btn btn-primary">Ajouter</button>
+        </form>
+      </div>
+
+
+
+
+
+
+
+
+
+
+{% endblock %}
